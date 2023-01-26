@@ -104,7 +104,7 @@ const App = () => {
           }
         </View>
         <View style={styles.subContainer}>
-          <Button disabled={!isBackendReachable} title={isCameraActive ? "Stop camera" : "Start camera"} onPress={changeCameraState} />
+          <Button color={isCameraActive ? "red" : "green"} disabled={!isBackendReachable} title={isCameraActive ? "Stop camera" : "Start camera"} onPress={changeCameraState} />
         </View>
       </View>
     </SafeAreaView>
